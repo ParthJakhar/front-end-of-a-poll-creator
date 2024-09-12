@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polls & Surveys</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create a Poll</h1>
+        <form id="poll-form">
+            <input type="text" id="poll-question" placeholder="Enter Poll Question" required>
+            <div id="options-container">
+                <input type="text" class="poll-option" placeholder="Enter Option" required>
+            </div>
+            <button type="button" id="add-option-btn">Add Option</button>
+            <button type="submit">Create Poll</button>
+        </form>
+
+        <div id="poll-display" class="hidden">
+            <h2 id="display-question"></h2>
+            <form id="vote-form"></form>
+            <button id="submit-vote" class="hidden">Submit Vote</button>
+            <div id="results-display" class="hidden"></div>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
